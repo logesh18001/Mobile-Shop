@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Phones</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./phones .css">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="logo"><h3>DIGITAL DIAL</h3></div>
+      <nav>
+        <ul>
+          <li><a href="./home.html">HOME</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+          <li><a href="./phones.html">MOBILES</a></li>
+          <li class="cart-icon" id="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <!-- Cart Dropdown -->
+  <div class="cart-dropdown" id="cart-dropdown">
+    <h4>Cart Items</h4>
+    <ul id="cart-items-list">
+      <li style="text-align:center; color:gray;">No items added yet</li>
+    </ul>
+    <div class="cart-total">
+      <strong>Total: ₹<span id="cart-total">0</span></strong>
+    </div>
+    <button id="checkout-btn">Checkout</button>
+  </div>
+
+  <!-- Products -->
+  <div class="products">
+    <div class="mobilecard">
+      <img src="./img/sam a35.jpg" alt="">
+      <h2>Samsung A35</h2>
+      <h4>8GB RAM 128GB STORAGE</h4>
+      <p>₹15,000</p>
+      <button class="add-to-cart" data-name="Samsung A35">Add to Cart</button>
+    </div>
+    <div class="mobilecard">
+      <img src="./img/y29.jpg" alt="">
+      <h2>Vivo Y29</h2>
+      <h4>8GB RAM 128GB STORAGE</h4>
+      <p>₹17,999</p>
+      <button class="add-to-cart" data-name="Vivo Y29">Add to Cart</button>
+    </div>
+    <div class="mobilecard">
+            <img src="./img/sam a55.jpg" alt="">
+            <h2>Samsung A55</h2>
+            <h4>8GB RAM 128GB STORAGE</h4>
+            <P>17,999..RS</P>
+            <button class="add-to-cart" data-name="Samsung A55">Add to Cart</button>
+        </div>
+        <div class="mobilecard">
+            <img src="./img/sam a12.jpg" alt="">
+            <h2>Samsung A32</h2>
+            <h4>8GB RAM 128GB STORAGE</h4>
+            <p>14,499..RS</p>
+            <button class="add-to-cart" data-name="Samsung A32">Add to Cart</button>
+        </div>
+        <div class="mobilecard">
+            <img src="./img/sam a32.jpg" alt="">
+            <h2>Samsung A12</h2>
+            <h4>8GB RAM 128GB STORAGE</h4>
+            <p>20,000..RS</p>
+           <button class="add-to-cart" data-name="Samsung A12">Add to Cart</button>
+        </div>
+
+    
+        <div class="mobilecard">
+            <img src="./img/mi 13pro.jpg" alt="">
+            <h2>Redmi 13 Pro</h2>
+            <h4>8GB RAM 128GB STORAGE</h4>
+            <P>15,000..RS</P>
+            <button class="add-to-cart" data-name="Redmi 13 Pro">Add to Cart</button>
+        </div>
+        <div class="mobilecard">
+            <img src="./img/mi 14pro.jpg" alt="">
+            <h2>Redmi 14Pro</h2>
+            <h4>16GB RAM 256GB STORAGE</h4>
+            <P>22,399..RS</P>
+           <button class="add-to-cart" data-name="Redmi 14Pro">Add to Cart</button>
+        </div>
+        <div class="mobilecard">
+            <img src="./img/mi not12.jpg" alt="">
+            <h2>Redmi NOte 12</h2>
+            <h4>6GB RAM 128GB STORAGE</h4>
+            <P>17,999..RS</P>
+           <button class="add-to-cart" data-name="Redmi NOte 12">Add to Cart</button>
+        </div>
+        <div class="mobilecard">
+            <img src="./img/mi 14t.jpg" alt="">
+            <h2>Xiaomi 14T</h2>
+            <h4>8GB RAM 128GB STORAGE</h4>
+            <p>14,499..RS</p>
+           <button class="add-to-cart" data-name="Xiaomi 14T">Add to Cart</button>
+        </div>
+        <div class="mobilecard">
+            <img src="./img/mi 12pro.jpg" alt="">
+            <h2>Xiaomi 12pro</h2>
+            <h4>12GB RAM 256GB STORAGE</h4>
+            <p>20,000..RS</p>
+            <button class="add-to-cart" data-name="Xiaomi 12pro">Add to Cart</button>
+        </div>
+    <div class="mobilecard">
+            <img src="./img/y19.jpg" alt="">
+            <h2>Vivo Y19</h2>
+            <h4>8GB RAM 128GB STORAGE</h4>
+            <P>15,000..RS</P>
+            <button class="add-to-cart" data-name="Vivo Y19">Add to Cart</button>
+        </div>
+        <div class="mobilecard">
+            <img src="./img/y29.jpg" alt="">
+            <h2>Vivo Y29S</h2>
+            <h4>8GB RAM 128GB STORAGE</h4>
+            <P>22,399..RS</P>
+           <button class="add-to-cart" data-name="Vivo Y29S">Add to Cart</button>
+        </div>
+        <div class="mobilecard">
+            <img src="./img/y29.jpg" alt="">
+            <h2>Vivo y29</h2>
+            <h4>8GB RAM 128GB STORAGE</h4>
+            <P>17,999..RS</P>
+           <button class="add-to-cart" data-name="Vivo y29">Add to Cart</button>
+        </div>
+        <div class="mobilecard">
+            <img src="./img/t3 pro.jpg" alt="">
+            <h2>Samsung A35</h2>
+            <h4>8GB RAM 128GB STORAGE</h4>
+            <p>14,499..RS</p>
+           <button class="add-to-cart" data-name="Samsung A35">Add to Cart</button>
+           </div>
+        <div class="mobilecard">
+            <img src="./img/y200.jpg" alt="">
+            <h2>Vivo Y200</h2>
+            <h4>8GB RAM 128GB STORAGE</h4>
+            <p>20,000..RS</p>
+            <button class="add-to-cart" data-name="Vivo Y200">Add to Cart</button>
+        </div>
+
+    
+  </div>
+
+ <script src="./script.js"></script>
+</body>
+</html>

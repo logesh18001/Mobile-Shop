@@ -1,0 +1,175 @@
+* {
+         margin: 0; 
+         padding: 0; 
+         box-sizing: border-box; 
+        }
+    body {
+      font-family: 'Oxanium', sans-serif;
+      background: linear-gradient(to right, #F0C5D7, #C2D4F0);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #3b39394a;
+    }
+
+    .logo h3 { font-size: 24px; }
+
+    nav ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    nav ul li { position: relative; font-size: 18px; }
+
+    nav ul li a { text-decoration: none; color: #000; }
+
+    .cart-icon {
+      position: relative;
+      cursor: pointer;
+    }
+
+    #cart-count {
+      position: absolute;
+      top: -10px;
+      right: -15px;
+      background-color: red;
+      color: white;
+      border-radius: 50%;
+      padding: 2px 8px;
+      font-size: 12px;
+    }
+
+    .cart-dropdown {
+      position: absolute;
+      top: 70px;
+      right: 30px;
+      width: 280px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      padding: 15px;
+      display: none;
+      z-index: 1000;
+    }
+
+    .cart-dropdown h4 {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    #cart-items-list {
+      list-style: none;
+      padding: 0;
+      max-height: 220px;
+      overflow-y: auto;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .cart-item span {
+      font-size: 14px;
+      flex: 1;
+    }
+
+    .qty-controls {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .qty-controls button {
+      padding: 2px 6px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .cart-total {
+      margin-top: 10px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    #checkout-btn {
+      width: 100%;
+      margin-top: 10px;
+      padding: 8px;
+      background: linear-gradient(to right, #870000, #190A05);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #checkout-btn:hover {
+      background: #fff;
+      color: #000;
+      border: 1px solid #000;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin: 30px;
+    }
+
+    .mobilecard {
+      width: 250px;
+      border-radius: 15px;
+      background-color: #605d5f6b;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .mobilecard img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .mobilecard button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: linear-gradient(to right, #870000, #190A05);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .mobilecard button:hover {
+      background: #fff;
+      color: #000;
+      box-shadow: 0 0 10px white;
+    }
+
+    @media screen and (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      
+      }
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+    }

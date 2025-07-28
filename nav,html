@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Digital Dial</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet"/>
+
+  <!-- Embedded CSS -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      background: linear-gradient(to right, #F0C5D7, #C2D4F0);
+      font-family: "Oxanium", sans-serif;
+    }
+
+    .contact-section {
+      background: url(./img/cont-bg.jpg) no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+      color: white;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      height: 100%;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      gap: 40px;
+    }
+
+    .left, .right {
+      flex: 1 1 400px;
+    }
+
+    .left h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .source {
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+
+    .source a {
+      color: #f5a623;
+      text-decoration: none;
+    }
+
+    .info-block {
+      margin-bottom: 30px;
+    }
+
+    .info-block h4 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .info-block p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    form {
+      background: transparent;
+      padding: 0;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .input-group {
+      flex: 1 1 48%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .input-group input,
+    .input-group textarea {
+      padding: 10px;
+      border: none;
+      border-bottom: 1px solid #999;
+      background: transparent;
+      color: white;
+      font-size: 14px;
+    }
+
+    .input-group input::placeholder,
+    .input-group textarea::placeholder {
+      color: #bbb;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 12px 30px;
+      background: #f5a623;
+      border: none;
+      color: black;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 25px;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #ffb938;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: azure;
+    }
+
+    .foot {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .copy h1, .copy p {
+      padding: 20px;
+    }
+
+    .log {
+      padding: 20px;
+    }
+
+    .log img {
+      padding: 10px;
+    }
+
+    .copy input[type="email"] {
+      height: 50px;
+      width: 250px;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    .nav h3, .terms h3 {
+      padding: 10px;
+    }
+
+    .nav ul, .terms ul {
+      list-style: none;
+    }
+
+    .nav ul li, .terms ul li {
+      padding: 10px;
+    }
+
+    .nav ul li a {
+      text-decoration: none;
+      color: azure;
+    }
+
+    @media (max-width: 768px) {
+      .form-row {
+        flex-direction: column;
+      }
+
+      .input-group {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="overlay">
+      <div class="contact-container">
+        <div class="left">
+          <h2>Contact Us</h2>
+          <p class="source">Images from <a href="https://www.freepik.com" target="_blank">Freepik</a></p>
+
+          <div class="info-block">
+            <h4>📞 Call Us</h4>
+            <p>1 (234) 567-891, 1 (234) 987-654</p>
+          </div>
+
+          <div class="info-block">
+            <h4>📍 Location</h4>
+            <p>121 Rock Street, 21 Avenue, New York, NY 92103-9000</p>
+          </div>
+
+          <div class="info-block">
+            <h4>⏰ Business Hours</h4>
+            <p>Mon – Fri …… 10 am – 8 pm<br>Sat, Sun …… Closed</p>
+          </div>
+        </div>
+
+        <div class="right">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter a valid email address" required />
+              </div>
+              <div class="input-group">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your Name" required />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label>Address</label>
+              <input type="text" placeholder="Enter your address" required />
+            </div>
+
+            <div class="input-group">
+              <label>Message</label>
+              <textarea placeholder="Enter your message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="foot">
+      <div class="copy">
+        <h1>DIGITAL DIAL</h1>
+        <p>&copy; ALL RIGHTS RESERVED BY DIGITAL DIAL</p>
+        <input type="email" placeholder="Enter Your E-mail">
+        <div class="log">
+          <img src="./img/icons8-facebook-48.png" alt="">
+          <img src="./img/icons8-instagram-48.png" alt="">
+          <img src="./img/icons8-twitter-48.png" alt="">
+          <img src="./img/icons8-whatsapp-48.png" alt="">
+        </div>
+      </div>
+
+      <div class="nav">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./about.html">ABOUT US</a></li>
+          <li><a href="./contact.html">CONTACT US</a></li>
+          <li><a href="#">MOBILES</a></li>
+          <li><a href="#">PREMIUM MOBILES</a></li>
+        </ul>
+      </div>
+
+      <div class="terms">
+        <h3>Products</h3>
+        <ul>
+          <li>About</li>
+          <li>Help And Support</li>
+          <li>FAQs</li>
+          <li>Buying Guide</li>
+          <li>Return Policy</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript: Form Validation -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const email = this.querySelector('input[type="email"]');
+      const name = this.querySelector('input[placeholder="Enter your Name"]');
+      const address = this.querySelector('input[placeholder="Enter your address"]');
+      const message = this.querySelector('textarea');
+
+      let isValid = true;
+      let errorMsg = "";
+
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+      if (!email.value.trim() || !emailPattern.test(email.value)) {
+        isValid = false;
+        errorMsg += "⚠ Please enter a valid email.\n";
+      }
+
+      if (!name.value.trim()) {
+        isValid = false;
+        errorMsg += "⚠ Name cannot be empty.\n";
+      }
+
+      if (!address.value.trim()) {
+        isValid = false;
+        errorMsg += "⚠ Address cannot be empty.\n";
+      }
+
+      if (message.value.trim().length < 10) {
+        isValid = false;
+        errorMsg += "⚠ Message should be at least 10 characters.\n";
+      }
+
+      if (isValid) {
+        alert("✅ Form submitted successfully!");
+        this.reset();
+      } else {
+        alert(errorMsg);
+      }
+    });
+  </script>
+</body>
+</html>

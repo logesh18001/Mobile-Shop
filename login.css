@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./img/talk.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+}
+.login{
+    border: none;
+    border-radius: 20px;
+    /* background-color: #f5d2d2;  */
+    height: 450px;
+    width: 420px;
+    margin: 120px auto;
+    backdrop-filter: blur(15px); 
+}
+.login h1{
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+ input[type="text"]{
+    background-color: #e8ecec;
+    width: 300px;
+    height: 40px;
+    margin-left: 58px;
+    margin-top: 15px;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 10px 10px 10px ;
+    color: black;
+}
+ input[type="password"]{
+    background-color: #e2e9e7;
+    width: 300px;
+    height: 40px;
+    margin-left: 58px;
+    margin-top: 15px;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 10px 10px 10px ;
+    color: black;
+}
+input[type="text"]:hover{
+    color:white;
+    box-shadow: 0px 0px 15px 5px;
+}
+input[ placeholder="Enter your User Name"]{
+    color: black;
+}
+input[type="checkbox"]{
+    margin-left: 50px;
+}
+label{
+    color: black;
+    font-size: 15px;
+}
+.switch p{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #000000;
+}
+
+.login a{
+    
+    font-size: 18px;
+    color:rgb(200, 200, 203);
+    text-decoration: none;
+}
+.reg p a{
+    margin: 0px 0px 0px 0px;
+}
+button{
+    height: 50px;
+    width: 200px;
+    border:none ;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-left: 105px;
+    margin-bottom: 20px;
+    background-color: #4d4e4e;
+    color: #c1bdbd;
+    font-size: 20px;
+    font-weight: 600;
+}
+button:hover{
+    color:rgb(225, 217, 217) ;
+    box-shadow: 0px 0px 10px 5px;
+    transition: 1s;
+}
+/* Mobile Devices (up to 600px) */
+@media only screen and (max-width: 600px) {
+    .login {
+        width: 90%;
+        height: auto;
+        margin: 80px auto;
+        padding: 20px 0;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    button {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .reg p {
+        margin-left: 10%;
+        font-size: 18px;
+    }
+
+    input[type="checkbox"] {
+        margin-left: 10%;
+    }
+}
+
+/* Tablet Devices (601px to 1024px) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .login {
+        width: 70%;
+        height: auto;
+        margin: 100px auto;
+        padding: 20px 0;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    button {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .reg p {
+        margin-left: 15%;
+        font-size: 19px;
+    }
+
+    input[type="checkbox"] {
+        margin-left: 10%;
+    }
+}
